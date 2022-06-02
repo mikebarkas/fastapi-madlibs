@@ -1,0 +1,11 @@
+version: '3.10'
+
+services:
+  web:
+#    build: .
+    image: mikebarkas/madlibs:0.1
+    command: uvicorn main:app --reload --workers 1 --host 0.0.0.0 --port 8000
+    volumes:
+      - ./:/usr/src/app/
+    ports:
+      - 8002:8000
