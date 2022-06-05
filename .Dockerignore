@@ -1,0 +1,7 @@
+.git
+.gitignore
+.vscode/
+.pytest_cache/
+__pycache__/
+README.md
+test_main.*
